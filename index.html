@@ -2,8 +2,8 @@
 
 <head>
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="reset" href="Portfolio\assets\reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -19,8 +19,12 @@
             margin: 5px;
         }
 
-        .body p {
-            padding: 50px;
+        p {
+            padding: 5px;
+            font-family: sans-serif;
+        }
+        .spinners{
+            margin: auto;
         }
     </style>
 </head>
@@ -69,18 +73,18 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-sm-1"></div>
+                <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <h1 class="display-4">About Me</h1>
                 </div>
-                <div class="col-sm-3"></div>
+                <div class="col-sm-2"></div>
             </div>
 
             <div class="row">
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                     <h4 style="text-align: Left; width: 100%; border-bottom: solid #343a40;">More Navs</h4>
 
-                    <div class="More-Navs" style="float: Left;">
+                    <div class="More-Navs" style="float: Left; width: 100%;">
                         <div class="btn-group-vertical">
                             <a class="btn btn-secondary" href="index.html" role="button">About Me</a>
                             <a class="btn btn-secondary" href="portfolio.html" role="button">Portfolio</a>
@@ -90,7 +94,7 @@
 
                     <h4 style="text-align: Left; width: 100%; border-bottom: solid #343a40">Just Incase</h4>
 
-                    <div class="More-Navs" style="float: left;">
+                    <div class="More-Navs" style="float: left; width: 100%;">
                         <div class="btn-group-vertical">
                             <a class="btn btn-secondary" href="https://www.youtube.com/" role="button">YouTube</a>
                             <a class="btn btn-secondary" href="https://www.pandora.com/" role="button">Pandora</a>
@@ -118,17 +122,17 @@
                         skeletons in my closet. Under my bed and up under my faucet. Then you would know I've completely
                         lost it. Is he nuts? No, he's insane.</p>
                 </div>
-                <div class="col-sm-3">
-                    <h6>What ever you do. Don't push these buttons.<br>
-                        I repeat. DO NOT PUSH THESE BUTTONS!</h6>
+                <div class="col-sm-2">
+                    <h6>DON'T PUSH THESE BUTTONS!</h6>
                     <div class="spinners">
                         <div class="row">
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
-                                    autocomplete="off">
+                                    autocomplete="off" onclick=myFunction()>
                                     <div class="spinner-border text-primary" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-secondary" data-toggle="button"
@@ -136,6 +140,7 @@
                                     <div class="spinner-border text-secondary" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false"
@@ -143,6 +148,7 @@
                                     <div class="spinner-border text-danger" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false"
@@ -150,6 +156,7 @@
                                     <div class="spinner-border text-success" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                         </div>
                         <div class="row">
@@ -159,6 +166,7 @@
                                     <div class="spinner-border text-warning" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false"
@@ -166,6 +174,7 @@
                                     <div class="spinner-border text-info" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-light" data-toggle="button" aria-pressed="false"
@@ -173,6 +182,7 @@
                                     <div class="spinner-border text-light" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                             <div class="col-sm-3">
                                 <button type="button" class="btn btn-dark" data-toggle="button" aria-pressed="false"
@@ -180,6 +190,7 @@
                                     <div class="spinner-border text-dark" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -221,6 +232,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+            alert = ("Stop It!!");
+        }
+    </script>
 </body>
 
 <footer>
